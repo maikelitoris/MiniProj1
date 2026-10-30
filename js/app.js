@@ -33,12 +33,10 @@ const hobbies = [
   { icone: "fa-solid fa-music", titulo: "Música e piano", texto: "Adoro música e toco piano." },
 ];
 
-// Redes sociais do rodapé (substituir "#" pelos endereços reais)
+// Redes sociais do rodapé
 const redes = [
   { nome: "GitHub", icone: "fa-brands fa-github", url: "https://github.com/maikelitoris" },
-  { nome: "LinkedIn", icone: "fa-brands fa-linkedin", url: "#" },
-  { nome: "Facebook", icone: "fa-brands fa-facebook", url: "#" },
-  { nome: "Instagram", icone: "fa-brands fa-instagram", url: "#" },
+  { nome: "Instagram", icone: "fa-brands fa-instagram", url: "https://www.instagram.com/pedro.bras_/" },
   { nome: "Email", icone: "fa-solid fa-envelope", url: "mailto:pedro.bras.85@gmail.com" },
 ];
 

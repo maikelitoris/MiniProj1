@@ -32,4 +32,3 @@ docs/wireframe_MiniProj1.pdf   wireframe das 3 secções (computador e telemóve
 
 - [Vue.js](https://vuejs.org/) e [Vue Router](https://router.vuejs.org/) (licença MIT).
 - Ícones [Font Awesome Free](https://fontawesome.com/) (ícones CC BY 4.0, código MIT).
-- Desenvolvido com apoio de uma ferramenta de IA (Claude, Anthropic) na implementação; o conteúdo, a revisão e a compreensão do código são do autor.
