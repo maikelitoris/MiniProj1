@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pedro Brás · Currículo</title>
+  <meta name="description" content="Currículo de Pedro Brás, técnico de informática e mestrando em Engenharia Informática e Tecnologia Web.">
+  <!-- Ícones (Font Awesome, copiado para a pasta vendor para funcionar sem Internet) -->
+  <link rel="stylesheet" href="vendor/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Toda a aplicação vive dentro deste elemento: é a "única página" da SPA -->
+  <div id="app">
+    <header class="topo">
+      <router-link to="/" class="marca">Pedro Brás</router-link>
+      <!-- Menu: links internos; o Vue Router troca o conteúdo sem recarregar a página -->
+      <nav class="menu" aria-label="Secções do currículo">
+        <router-link to="/">Quem sou eu?</router-link>
+        <router-link to="/o-que-faco">O que faço?</router-link>
+        <router-link to="/hobbies">Hobbies</router-link>
+      </nav>
+    </header>
+
+    <main class="conteudo">
+      <!-- Aqui o Vue Router mostra o componente da secção atual -->
+      <router-view></router-view>
+    </main>
+
+    <!-- Rodapé com a identidade virtual: aparece em todas as secções -->
+    <rodape></rodape>
+  </div>
+
+  <!-- Vue 3 e Vue Router 4 (versões "global", carregadas sem passo de build) -->
+  <script src="vendor/vue.global.prod.js"></script>
+  <script src="vendor/vue-router.global.prod.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

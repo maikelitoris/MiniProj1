@@ -1,0 +1,47 @@
+:root {
+  --fundo: #f4f6f8; --cartao: #ffffff; --texto: #1f2933; --suave: #52606d;
+  --destaque: #1f6feb; --borda: #e1e5ea; --raio: 12px;
+}
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; background: var(--fundo); color: var(--texto); line-height: 1.6; }
+#app { min-height: 100vh; display: flex; flex-direction: column; }
+
+/* Cabeçalho e menu */
+.topo { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: .5rem 1rem;
+        padding: 1rem 1.5rem; background: var(--cartao); border-bottom: 1px solid var(--borda); position: sticky; top: 0; z-index: 10; }
+.marca { font-weight: 700; font-size: 1.15rem; color: var(--texto); text-decoration: none; }
+.menu { display: flex; gap: .25rem; flex-wrap: wrap; }
+.menu a { padding: .45rem .8rem; border-radius: 999px; color: var(--suave); text-decoration: none; font-weight: 500; }
+.menu a:hover { background: var(--fundo); color: var(--texto); }
+.menu a.router-link-exact-active { background: var(--destaque); color: #fff; }
+
+/* Conteúdo */
+.conteudo { flex: 1; width: 100%; max-width: 900px; margin: 0 auto; padding: 1.5rem; }
+.cartao { background: var(--cartao); border: 1px solid var(--borda); border-radius: var(--raio); padding: 1.5rem; margin-bottom: 1.25rem; }
+h1 { margin-top: 0; font-size: 1.8rem; } h2 { font-size: 1.15rem; margin: 1rem 0 .5rem; }
+.titulo-seccao { margin-bottom: 1rem; }
+.apresentacao { display: flex; gap: 1.5rem; align-items: flex-start; }
+.foto { width: 160px; height: 160px; border-radius: 50%; object-fit: cover; flex-shrink: 0; border: 4px solid var(--fundo); }
+.nome { font-size: 1.25rem; font-weight: 700; margin: 0; } .titulo { color: var(--suave); margin-top: 0; }
+.lista-tempo { list-style: none; padding: 0; margin: 0; }
+.lista-tempo li { border-left: 3px solid var(--destaque); padding: .25rem 0 .25rem 1rem; margin-bottom: 1rem; }
+.lista-tempo p { margin: .25rem 0 0; }
+.quando { display: block; font-size: .85rem; color: var(--destaque); font-weight: 600; }
+.onde { color: var(--suave); }
+.etiquetas { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: .5rem; }
+.etiquetas li { background: var(--fundo); border: 1px solid var(--borda); border-radius: 999px; padding: .2rem .75rem; font-size: .9rem; }
+.grelha { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.25rem; }
+.hobby { margin: 0; text-align: center; } .hobby i { font-size: 2.2rem; color: var(--destaque); }
+
+/* Rodapé com as redes sociais */
+.rodape { background: var(--texto); color: #cbd2d9; text-align: center; padding: 1.25rem; }
+.redes { list-style: none; padding: 0; margin: 0 0 .5rem; display: flex; justify-content: center; gap: 1.1rem; }
+.redes a { color: #fff; font-size: 1.5rem; } .redes a:hover { color: var(--destaque); }
+.rodape p { margin: 0; font-size: .85rem; }
+
+/* Telemóvel */
+@media (max-width: 600px) {
+  .apresentacao { flex-direction: column; align-items: center; text-align: center; }
+  .topo { justify-content: center; }
+  .conteudo { padding: 1rem; }
+}
